@@ -14,14 +14,12 @@
 
         <v-app-bar-title>Journey Hero Todo App</v-app-bar-title>
 
-        <v-btn icon>
+        <v-btn icon @click="router.replace('/')">
           <v-icon>mdi-home</v-icon>
         </v-btn>
 
       </v-app-bar>
-      <v-main class="mb-12 mr-0 "
-
-      >
+      <v-main class="mb-12 mr-0">
         <router-view/>
       </v-main>
     </v-layout>
@@ -29,5 +27,6 @@
 </template>
 
 <script lang="ts" setup>
-//
+
+import router from "@/router";
 </script>
